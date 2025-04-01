@@ -69,7 +69,7 @@ def index():
         box_size=10,
         border=4,
     )
-    qr.add_data(dashboard_link)
+    qr.add_data("https://opc-scada-simens.onrender.com/")
     qr.make(fit=True)
     img = qr.make_image(fill_color="black", back_color="white")
 
